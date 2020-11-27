@@ -20,4 +20,4 @@ formats:
 python:
   version: 3.7
   install:
-    - requirements: aio/readthedocs_install_aio.txt
+    - requirements: aio/requirements.txt
