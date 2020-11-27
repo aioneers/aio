@@ -18,7 +18,7 @@ We are dedicated to spending up to 5% of our time on sharing, exchanging and cur
 with the end goal of accelerating our community’s efforts to build a more sustainable world.
 <br>
 <br>
-The documentation can be found [here](https://aioneersaio.readthedocs.io/en/latest/reference).
+The documentation can be found here [![Documentation Status](https://readthedocs.org/projects/aioneersaio/badge/?version=latest)](https://aioneersaio.readthedocs.io/en/latest/?badge=latest).
 
 # Install
 
@@ -151,4 +151,4 @@ tracking requests and bugs and please direct specific questions to
 
 # License
 
-[![License](https://img.shields.io/badge/License-MIT-brightgreen)](license)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen)](LICENSE.md)
