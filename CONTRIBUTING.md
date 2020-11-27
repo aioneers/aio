@@ -70,7 +70,7 @@ feature.
 
 Include a license at the top of new files.
 
-[License](LICENSE.md)
+[License](LICENSE)
 
 #### Running pytests
 

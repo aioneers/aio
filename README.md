@@ -148,4 +148,4 @@ tracking requests and bugs and please direct specific questions to
 
 # License
 
-[![License](https://img.shields.io/badge/License-MIT-brightgreen)](license.md)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen)](license)
