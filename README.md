@@ -143,7 +143,7 @@ aio.set_dbutils(dbutils) -->
 
 # Contribution guidelines
 
-First of all, thank you for considering contributing to this repository.
+First of all, thank you for considering contributing to this repository. Any contribution, from correcting a typo, forking the repo to adding another function or an insightful tutorial is very welcome.
 
 **If you want to contribute to aioneers, be sure to review the
 [contribution guidelines](CONTRIBUTING.md). This project adheres to aioneers'
