@@ -3,11 +3,10 @@
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 # Required
-version: main
+# version: main
 # # Build documentation in the docs/ directory with Sphinx
-# sphinx:
-#   configuration: docs/conf.py
-
+sphinx:
+  configuration: ./aio/doc/source/conf.py
 # # Build documentation with MkDocs
 # #mkdocs:
 # #  configuration: mkdocs.yml
