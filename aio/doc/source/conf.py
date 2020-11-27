@@ -37,7 +37,7 @@ extensions = [
     "sphinx.ext.autosummary",
     # "numpydoc",
     # "nbsphinx",
-    "sphinxcontrib.confluencebuilder",
+    # "sphinxcontrib.confluencebuilder",
     # "IPython.sphinxext.ipython_directive",
     # "IPython.sphinxext.ipython_console_highlighting",
 ]
