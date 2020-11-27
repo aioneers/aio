@@ -1,5 +1,5 @@
 ![aioneers_logo](etc/aioneers_logo.png)
-![Python_Version](https://img.shields.io/badge/Python%20Version-3.7%20%7C%203.8-blue) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) ![License](https://img.shields.io/badge/License-MIT-brightgreen) [![aioneers](https://img.shields.io/badge/With%20love%20from-aioneers-blue)](https://aioneers.com/about/why/)
+![Python_Version](https://img.shields.io/badge/Python%20Version-3.7%20%7C%203.8-blue) [![Documentation Status](https://readthedocs.org/projects/aioneersaio/badge/?version=latest)](https://aioneersaio.readthedocs.io/en/latest/?badge=latest) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md) ![License](https://img.shields.io/badge/License-MIT-brightgreen) [![aioneers](https://img.shields.io/badge/With%20love%20from-aioneers-blue)](https://aioneers.com/about/why/)
 
 # Our Motivation
 
