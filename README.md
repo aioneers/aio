@@ -1,7 +1,8 @@
 [![aioneers_logo](etc/aioneers_logo.png)](https://aioneers.com/about/open-source-aio-data-science/)
 ![Python_Version](https://img.shields.io/badge/Python%20Version-3.7%20%7C%203.8-blue)
 [![Documentation Status](https://readthedocs.org/projects/aioneersaio/badge/?version=latest)](https://aioneersaio.readthedocs.io/en/latest/reference)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen)](LICENSE)
 [![aioneers](https://img.shields.io/badge/With%20love%20from-aioneers-blue)](https://aioneers.com/about/open-source-aio-data-science/)
 
@@ -155,4 +156,4 @@ tracking requests and bugs and please direct specific questions to
 
 # License
 
-[![License](https://img.shields.io/badge/License-MIT-brightgreen)](LICENSE.md)
+[![License](https://img.shields.io/badge/License-MIT-brightgreen)](LICENSE)
