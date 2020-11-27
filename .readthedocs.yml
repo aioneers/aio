@@ -4,19 +4,20 @@
 
 # Required
 # version: main
-# # Build documentation in the docs/ directory with Sphinx
+
+# Build documentation in the docs/ directory with Sphinx
 sphinx:
   configuration: ./aio/doc/source/conf.py
 # # Build documentation with MkDocs
 # #mkdocs:
 # #  configuration: mkdocs.yml
 
-# # Optionally build your docs in additional formats such as PDF
-# formats:
-#   - pdf
+# Optionally build your docs in additional formats such as PDF
+formats:
+  - pdf
 
-# # Optionally set the version of Python and requirements required to build your docs
-# python:
-#   version: 3.7
-#   install:
-#     - requirements: docs/requirements.txt
+# Optionally set the version of Python and requirements required to build your docs
+python:
+  version: 3.7
+  install:
+    - requirements: requirements.txt
