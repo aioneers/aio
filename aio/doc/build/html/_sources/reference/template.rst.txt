@@ -1,0 +1,14 @@
+==========================================
+AIO Documentation
+==========================================
+
+.. currentmodule:: aio
+
+List of Functions
+~~~~~~~~~~~~~~~~~
+.. autosummary::
+   <your_module>
+
+Definition of Functions
+~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: <your_module>
