@@ -40,7 +40,7 @@ $ git clone -b master https://github.com/aioneers/aio
 Install the library in a way that the most recent version on the local machine is always used
 
 ```
-$ cd [path to the repository]
+$ cd <path to the repository>
 $ pip install -e .
 ```
 
