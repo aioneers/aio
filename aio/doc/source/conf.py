@@ -35,7 +35,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.coverage",
     "sphinx.ext.autosummary",
-    # "numpydoc",
+    "numpydoc",
     # "nbsphinx",
     # "sphinxcontrib.confluencebuilder",
     # "IPython.sphinxext.ipython_directive",
