@@ -23,7 +23,7 @@ setuptools.setup(
         "pytest",
         "pydata_sphinx_theme",
         "nbsphinx",
-        "numpydoc",
+        # "numpydoc",
         "numpy",
         "pandas",
     ],
