@@ -6,7 +6,7 @@
 At [**aioneers**](https://aioneers.com/), we place a lot of importance on giving back to our community.<br>
 <br>
 We operate in the field of supply chains, helping organizations close their supply chain performance gap whilst
-retaining resilience and furthering sustainability.  ([See our Manifesto](https://aioneers.com/about/why/)).<br>
+retaining resilience and furthering sustainability. ([See our Manifesto](https://aioneers.com/about/why/)).<br>
 <br>
 We want a part of our work to be providing the supply chain data science community with open source,
 free-to-use code for building applications. This will be accompanied by insightful explanations and tutorials,
@@ -16,6 +16,8 @@ We happily welcome contributions from anyone sharing the same goal, to build and
 <br>
 We are dedicated to spending up to 5% of our time on sharing, exchanging and curating guides,
 with the end goal of accelerating our community’s efforts to build a more sustainable world.
+<br>
+The documentation can be found [here](https://aioneersaio.readthedocs.io/en/latest/).
 
 # Install
 
