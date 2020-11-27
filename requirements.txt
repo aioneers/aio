@@ -1,7 +1,0 @@
--e ./aio/
-pytest
-pydata_sphinx_theme
-nbsphinx
-numpydoc
-numpy
-pandas

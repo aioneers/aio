@@ -18,7 +18,7 @@ We are dedicated to spending up to 5% of our time on sharing, exchanging and cur
 with the end goal of accelerating our community’s efforts to build a more sustainable world.
 <br>
 <br>
-The documentation can be found [here](https://aioneersaio.readthedocs.io/en/latest/).
+The documentation can be found [here](https://aioneersaio.readthedocs.io/en/latest/reference).
 
 # Install
 
