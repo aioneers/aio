@@ -1,4 +1,5 @@
 from .abc_analysis import abc_analysis
+from .xyz_analysis import xyz_analysis
 
 
 def set_dbutils(dbutils_var):
