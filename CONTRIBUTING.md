@@ -68,7 +68,7 @@ feature.
 
 #### License
 
-Include a license at the top of new files.
+Include this license if you want to use our project.
 
 [License](LICENSE)
 
