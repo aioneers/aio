@@ -4,7 +4,7 @@ import aio
 import pandas as pd
 
 
-def test_abc_analysis():
+def test_abc_analysis_w_multiple_dimensions():
     # create sample data
     products, quantities, countries, regions, cities = {}, {}, {}, {}, {}
     np.random.seed(seed=0)
