@@ -68,4 +68,4 @@ html_static_path = ["./build/html/_static"]
 
 
 # -- Extension configuration -------------------------------------------------
-master_doc = "contents"
+master_doc = "index"
