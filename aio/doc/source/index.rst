@@ -1,5 +1,5 @@
 AIO documentation
-=================================
+=================
 
 .. toctree::
    :maxdepth: 2

@@ -1,10 +1,10 @@
-=============
-API reference
-=============
+=================
+AIO Documentation
+=================
 
 This page gives an overview of all public objects, functions and methods.
 
 .. toctree::
    :maxdepth: 2
 
-   abc_analysis
+   aio_supply_chain_analytics
