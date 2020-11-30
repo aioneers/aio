@@ -52,20 +52,20 @@ def abc_analysis(
     primary_dimension : string
         Column name in input DataFrame holding object to be classified, e.g. product.
 
-    secondary_dimension : list of strings
+    secondary_dimension : list of strings = None
         List of columns names in input DataFrame holding additional attributes of primary_dimension to
         structure classification on a more granular level, e.g. country, region, city
 
     numeric_dimension : string
         Column name in input DataFrame holding numeric values to be used for classification.
 
-    A : float
+    A : float = 0.8
         Threshold for classification.
 
-    B : float
+    B : float = 0.95
         Threshold for classification.
 
-    classified_only : bool
+    classified_only : bool = False
         Provides DataFrame with columns primary_dimension, secondary_dimension, numeric_dimension and class
         in originally provided naming.
 
