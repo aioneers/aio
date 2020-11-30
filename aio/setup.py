@@ -9,7 +9,7 @@ setuptools.setup(
     author="AIO",
     author_email="maintainer@aioneers.com",
     description="AIO tools",
-    long_description=long_description,
+    #    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/aioneers/aio",
     packages=setuptools.find_packages(),
