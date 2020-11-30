@@ -36,7 +36,7 @@ def abc_analysis(
     classified_only=False,
 ):
     """
-    Multi-Dimensional ABC Analysis provides ABC classification for a mutli-dimensional, granular input.
+    Multi-Dimensional ABC Analysis provides ABC classification for a multi-dimensional, granular input.
 
     Parameters
     ----------
