@@ -36,7 +36,7 @@ def test_abc_analysis():
     assert len(results)
 
 
-def test_abc_analysis2():
+def test_abc_analysis_wo_additional_dimensions():
     # create sample data
     products, quantities = {}, {}
     np.random.seed(seed=0)
