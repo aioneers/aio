@@ -159,6 +159,9 @@ def xyz_analysis(
     # add ("Date") Series to df_expanded
     df_expanded["Date"] = pd.concat([df_periods ]*len(l_keys_in_df), ignore_index=True)
 
+    # aggregate input DataFrame to deal with > 1 record per period
+    df = df.groupby(["key","Date"]).sum()
+
     # merge DataFrames (df & df_expanded) & fillna to prepare statisitcal analysis
     df_expanded = df_expanded.merge(
         df, left_on=["key", "Date"], right_on=["key", "Date"], how="outer"
