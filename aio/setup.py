@@ -2,8 +2,8 @@ import setuptools
 from pathlib import Path
 import os
 
-with open(str(Path(os.path.abspath(__file__)).parent.parent) + "/README.md", "r") as fh:
-    long_description = fh.read()
+# with open(str(Path(os.path.abspath(__file__)).parent.parent) + "/README.md", "r") as fh:
+#    long_description = fh.read()
 
 setuptools.setup(
     name="aio",
@@ -11,7 +11,7 @@ setuptools.setup(
     author="AIO",
     author_email="maintainer@aioneers.com",
     description="AIO tools",
-    long_description=long_description,
+    # long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/aioneers/aio",
     packages=setuptools.find_packages(),
