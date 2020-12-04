@@ -31,10 +31,7 @@ def abc_analysis(
     numeric_dimension : string
         Column name in input DataFrame holding numeric values to be used for classification.
 
-    A : float = 0.8
-        Threshold for classification.
-
-    B : float = 0.95
+    A, B : float = 0.8, 0.95
         Threshold for classification.
 
     classified_only : bool = False
