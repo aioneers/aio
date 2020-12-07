@@ -20,6 +20,10 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
+    git clone -b dev https://github.com/aioneers/aio.git
+  displayName: 'Install library'
+
+- script: |
     python -m pip install --upgrade pip
     # pip install -r requirements.txt
   displayName: 'Install dependencies'
