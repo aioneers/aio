@@ -26,4 +26,5 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
+    pytest aio/tests/test_abc_analysis.py
   displayName: 'pytest'
