@@ -22,8 +22,7 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install -e ./aio/
-    # pip install -r aio/requirements.txt
-  displayName: 'Install dependencies'
+  displayName: 'Install library with dependencies'
 
 - script: |
     pip install pytest pytest-azurepipelines
