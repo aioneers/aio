@@ -67,7 +67,7 @@ def xyz_analysis(
     Examples
     --------
     >>> import aio
-    >>> In [1]:
+    >>> 
     >>> # create sample data 
     >>> quantities = {}
     >>> np.random.seed(seed=42)
@@ -96,6 +96,7 @@ def xyz_analysis(
     >>> df = df[['Material','Country', 'Region', 'Date', 'Quantity']]
     >>> # delete random periods as actual data a likely to be incomplete
     >>> df = df.drop(np.random.choice(len(df),(int(len(df)/2))))
+    >>>
     >>> Out[1]:
         >>>     Material Country    Region	Date	    Quantity
         >>> 0	0102	    19	    00004	2020-01	    1163.0
