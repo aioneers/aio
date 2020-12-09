@@ -25,6 +25,5 @@ def test_create_time_series():
         )
         df = df.append(quantities)
 
-    # @Titus: why 1200?
-    assert len(df) == 1200
+    assert len(df) == 100 * 12
     print(len(df))
