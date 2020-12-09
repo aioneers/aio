@@ -38,5 +38,6 @@ setuptools.setup(
         "numpydoc",
         "numpy",
         "pandas",
+        "scipy",
     ],
 )
