@@ -1,6 +1,6 @@
 [![aioneers_logo](etc/aioneers_logo.png)](https://aioneers.com/about/open-source-aio-data-science/)
 ![Python_Version](https://img.shields.io/badge/Python%20Version-3.7%20%7C%203.8-blue)
-[![Build Status](https://dev.azure.com/Aio-Platform/aio-platform/_apis/build/status/aio-open-source_dev?branchName=refs%2Fpull%2F16%2Fmerge)](https://dev.azure.com/Aio-Platform/aio-platform/_build/latest?definitionId=28&branchName=refs%2Fpull%2F16%2Fmerge)
+[![Build Status](https://dev.azure.com/Aio-Platform/aio-platform/_apis/build/status/aio-open-source_dev?branchName=dev)](https://dev.azure.com/Aio-Platform/aio-platform/_build/latest?definitionId=28&branchName=dev)
 [![Documentation Status](https://readthedocs.org/projects/aioneersaio/badge/?version=latest)](https://aioneersaio.readthedocs.io/en/latest/reference)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CONTRIBUTING.md)
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Be%20kind%20to%20each%20other-yellow)](CODE_OF_CONDUCT.md)
