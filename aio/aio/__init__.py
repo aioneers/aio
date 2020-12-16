@@ -18,4 +18,4 @@ def set_dbutils(dbutils_var):
         dbutils_var
             ``dbutils`` variable from Databricks should be passed here
     """
-    _vault_set_dbutils(dbutils_var)
+    azure_key_vault._vault_set_dbutils(dbutils_var)
