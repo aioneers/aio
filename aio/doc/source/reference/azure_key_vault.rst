@@ -7,14 +7,14 @@ Azure Key Vault API
 List of Functions
 ~~~~~~~~~~~~~~~~~
 .. autosummary::
-   _vault_set_dbutils
    vault_get_secret
-   is_running_on_devops_pipeline
-   is_running_on_databricks
+   _vault_set_dbutils
+   _is_running_on_devops_pipeline
+   _is_running_on_databricks
 
 Definition of Functions
 ~~~~~~~~~~~~~~~~~~~~~~~
-.. autofunction:: _vault_set_dbutils
 .. autofunction:: vault_get_secret
-.. autofunction:: is_running_on_devops_pipeline
-.. autofunction:: is_running_on_databricks
+.. autofunction:: _vault_set_dbutils
+.. autofunction:: _is_running_on_devops_pipeline
+.. autofunction:: _is_running_on_databricks

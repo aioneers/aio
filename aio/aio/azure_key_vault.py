@@ -42,9 +42,9 @@ def vault_get_secret(
         Returns the secret as a string
     """
 
-    if aio.is_running_on_databricks():
+    if aio._is_running_on_databricks():
         return dbutils.secrets.get(scope=scope, key=key)
-    elif aio.is_running_on_devops_pipeline():
+    elif aio._is_running_on_devops_pipeline():
         key_right_format = key.upper().replace("-", "_")
         return os.environ[key_right_format]
     else:
@@ -57,7 +57,7 @@ def vault_get_secret(
         return client.get_secret(key).value
 
 
-def is_running_on_devops_pipeline():
+def _is_running_on_devops_pipeline():
     """Tests if a script is running on an Azure DevOps pipeline
 
     Returns
@@ -73,7 +73,7 @@ def is_running_on_devops_pipeline():
     return res
 
 
-def is_running_on_databricks():
+def _is_running_on_databricks():
     """Tests if a script is running locally or on Databricks
 
     Returns

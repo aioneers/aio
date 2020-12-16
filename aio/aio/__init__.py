@@ -4,10 +4,10 @@ from .xyz_analysis import xyz_analysis
 
 from .create_time_series import create_time_series
 
-from .azure_key_vault import _vault_set_dbutils
 from .azure_key_vault import vault_get_secret
-from .azure_key_vault import is_running_on_databricks
-from .azure_key_vault import is_running_on_devops_pipeline
+from .azure_key_vault import _vault_set_dbutils
+from .azure_key_vault import _is_running_on_databricks
+from .azure_key_vault import _is_running_on_devops_pipeline
 
 
 def set_dbutils(dbutils_var):
