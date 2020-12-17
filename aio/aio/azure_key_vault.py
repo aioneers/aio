@@ -4,21 +4,6 @@ import aio
 dbutils = None
 
 
-def _vault_set_dbutils(dbutils_var: str):
-    """Allows the vault functions to use the ``dbutils`` variable
-
-    Parameters
-    ----------
-        dbutils_var
-            ``dbutils`` variable from Databricks should be passed here
-
-    This function sets the variable ``dbutils`` to be used when running Databricks scripts.
-    """
-
-    global dbutils
-    dbutils = dbutils_var
-
-
 def vault_get_secret(
     scope: str,
     key: str,
@@ -49,12 +34,27 @@ def vault_get_secret(
         return os.environ[key_right_format]
     else:
         from azure.keyvault.secrets import SecretClient
-        from azure.identity import DefaultAzureCredential, AzureCliCredential
+        from azure.identity import AzureCliCredential
 
         credential = AzureCliCredential()
         vault_url = f"https://{scope}.vault.azure.net/"
         client = SecretClient(vault_url=vault_url, credential=credential)
         return client.get_secret(key).value
+
+
+def _vault_set_dbutils(dbutils_var: str):
+    """Allows the vault functions to use the ``dbutils`` variable
+
+    Parameters
+    ----------
+        dbutils_var
+            ``dbutils`` variable from Databricks should be passed here
+
+    This function sets the variable ``dbutils`` to be used when running Databricks scripts.
+    """
+
+    global dbutils
+    dbutils = dbutils_var
 
 
 def _is_running_on_devops_pipeline():
