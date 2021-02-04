@@ -1,7 +1,7 @@
-import aio_data_science_py as aio
 import pandas as pd
 import numpy as np
 from pathlib import Path
+import aio
 
 def test_read_and_write():
     data_path = (
