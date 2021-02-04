@@ -9,6 +9,7 @@ from .azure_key_vault import _vault_set_dbutils
 from .azure_key_vault import _is_running_on_databricks
 from .azure_key_vault import _is_running_on_devops_pipeline
 
+from .read_and_write import read_and_write, read_and_write_all
 
 def set_dbutils(dbutils_var):
     """Allows the vault functions to use the ``dbutils`` variable
