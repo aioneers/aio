@@ -9,3 +9,4 @@ This page gives an overview of all public objects, functions and methods.
 
    aio_supply_chain_analytics
    azure_key_vault
+   read_and_write
