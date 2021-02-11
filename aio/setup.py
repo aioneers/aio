@@ -33,6 +33,7 @@ setuptools.setup(
     python_requires=">=3.7",
     install_requires=[
         "pytest",
+        'pyarrow',
         "pydata_sphinx_theme",
         "nbsphinx",
         "numpydoc",
