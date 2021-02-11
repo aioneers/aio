@@ -38,7 +38,7 @@ def _write(data,
     """
     if to == 'csv' or to == 'both':
         # save as csv
-        csv_file_name = 'py_' + Path(file_name).stem + '.csv'
+        csv_file_name = 'py_' + Path(str(file_name)).stem + '.csv'
         if (file_location is None) and (write_directory is None):
             data.to_csv(os.path.abspath(csv_file_name), index=False)
         elif write_directory is None:
@@ -48,7 +48,7 @@ def _write(data,
         if verbose:
             print("{} is saved to the directory".format(csv_file_name))
     if to == 'parquet' or to == 'both':
-        parquet_file_name = 'py_' + Path(file_name).stem + '.parquet'
+        parquet_file_name = 'py_' + Path(str(file_name)).stem + '.parquet'
         if (file_location is None) and (write_directory is None):
             data.to_csv(os.path.abspath(parquet_file_name), index=False)
         elif write_directory is None:
@@ -100,7 +100,7 @@ def read_and_write(file_name,
 
         # try to read the file
         try:
-            if 'csv' in file_name:
+            if 'csv' in str(file_name):
                 df = pd.read_csv(f_path, error_bad_lines=False, engine="python", dtype=str)
                 # Save to directory
                 _write(df,
@@ -109,7 +109,7 @@ def read_and_write(file_name,
                        write_directory=write_directory,
                        to=to,
                        verbose=verbose)
-            elif "xls" in file_name.lower():
+            elif "xls" in str(file_name).lower():
                 df = pd.read_excel(f_path, dtype=str)
                 # Save to directory
                 _write(df,
