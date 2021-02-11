@@ -40,7 +40,7 @@ def _write(data,
         # save as csv
         csv_file_name = 'py_' + Path(str(file_name)).stem + '.csv'
         if (file_location is None) and (write_directory is None):
-            data.to_csv(os.path.abspath(csv_file_name), index=False)
+            data.to_csv(csv_file_name, index=False)
         elif write_directory is None:
             data.to_csv(join(file_location, csv_file_name), index=False)
         else:
@@ -50,7 +50,7 @@ def _write(data,
     if to == 'parquet' or to == 'both':
         parquet_file_name = 'py_' + Path(str(file_name)).stem + '.parquet'
         if (file_location is None) and (write_directory is None):
-            data.to_csv(os.path.abspath(parquet_file_name), index=False)
+            data.to_csv(parquet_file_name, index=False)
         elif write_directory is None:
             data.to_csv(join(file_location, parquet_file_name), index=False)
         else:
@@ -96,7 +96,7 @@ def read_and_write(file_name,
         if file_location is not None:
             f_path = join(file_location, file_name)
         else:
-            f_path = os.path.abspath(file_name)
+            f_path = file_name #os.path.abspath(file_name)
 
     # try to read the file
     if 'csv' in str(file_name):
