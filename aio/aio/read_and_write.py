@@ -98,28 +98,27 @@ def read_and_write(file_name,
         else:
             f_path = os.path.abspath(file_name)
 
-        # try to read the file
-        try:
-            if 'csv' in str(file_name):
-                df = pd.read_csv(f_path, error_bad_lines=False, engine="python", dtype=str)
-                # Save to directory
-                _write(df,
-                       file_name,
-                       file_location=file_location,
-                       write_directory=write_directory,
-                       to=to,
-                       verbose=verbose)
-            elif "xls" in str(file_name).lower():
-                df = pd.read_excel(f_path, dtype=str)
-                # Save to directory
-                _write(df,
-                       file_name,
-                       file_location=file_location,
-                       write_directory=write_directory,
-                       to=to,
-                       verbose=verbose)
-        except Exception as e:
-            print("Could not read {}, because {}".format(file_name, e))
+    # try to read the file
+    if 'csv' in str(file_name):
+        df = pd.read_csv(f_path, error_bad_lines=False, engine="python", dtype=str)
+        # Save to directory
+        _write(df,
+                file_name,
+                file_location=file_location,
+                write_directory=write_directory,
+                to=to,
+                verbose=verbose)
+    elif "xls" in str(file_name).lower():
+        df = pd.read_excel(f_path, dtype=str)
+        # Save to directory
+        _write(df,
+                file_name,
+                file_location=file_location,
+                write_directory=write_directory,
+                to=to,
+                verbose=verbose)
+    else:
+        raise ValueError("Could not read {}, because {} is not .csv or excel file".format(file_name, file_name))
 
 
 def _check_file(file_name):
