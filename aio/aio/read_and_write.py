@@ -50,12 +50,11 @@ def _write(data,
     if to == 'parquet' or to == 'both':
         parquet_file_name = 'py_' + Path(str(file_name)).stem + '.parquet'
         if (file_location is None) and (write_directory is None):
-            data.to_csv(parquet_file_name, index=False)
+            data.to_parquet(parquet_file_name, index=False)
         elif write_directory is None:
-            data.to_csv(join(file_location, parquet_file_name), index=False)
+            data.to_parquet(join(file_location, parquet_file_name), index=False)
         else:
-            data.to_csv(join(write_directory, parquet_file_name), index=False)
-        data.to_parquet(join(file_location, parquet_file_name), index=False)
+            data.to_parquet(join(write_directory, parquet_file_name), index=False)
         if verbose:
             print("{} is saved to the directory".format(parquet_file_name))
 
