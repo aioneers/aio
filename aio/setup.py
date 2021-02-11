@@ -39,5 +39,6 @@ setuptools.setup(
         "numpy",
         "pandas",
         "scipy",
+        "openpyxl",
     ],
 )
