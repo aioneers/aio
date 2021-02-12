@@ -243,7 +243,11 @@ def read_and_concat(list_of_files,
 
 
 def read_all_sheets(excel_file,
-                    file_location=None):
+                    file_location=None,
+                    write_directory=None,
+                    by_row=True,
+                    save_by=None,
+                    to='both'):
     """
     Read an excel file with multiple sheets and concatenate the sheets
 
@@ -253,11 +257,21 @@ def read_all_sheets(excel_file,
         The name of a excel file with multiple sheets (e.g. 'data.xlsx')
     file_location: str or path object
         The path of a data file location (folder)
+    write_directory: str or path object
+        The desired path to save the new file (folder).
+    by_row: bool. Default True
+        If concatenate by row or by column (False)
+    save_by: str, optional. Default None
+        If not None, the concatenate dataframe is written to the
+        file_location under this name.
+    to: {'csv', 'parquet', 'both'}, optional
+        The format to save the data. Default is 'both'.
 
     Returns
     -------
     concat_output: List of DataFrame
         List of dataframes, each sheet is a dataframe
+        optional: Save the concatenated dataframe to the given directory
     """
     if file_location is not None:
         excel_file_path = join(file_location, excel_file)
@@ -265,4 +279,15 @@ def read_all_sheets(excel_file,
         excel_file_path = os.path.abspath(excel_file)
     all_sheets = pd.read_excel(excel_file_path, None, dtype=str)
     list_of_dfs = list(all_sheets.values())
+    if by_row:
+        concat_output = pd.concat(lists_of_dfs, axis=0)
+    else:
+        concat_output = pd.concat(lists_of_dfs, axis=1)
+    if save_by is not None:
+        _write(concat_output,
+               save_by,
+               file_location,
+               write_directory,
+               to=to,
+               verbose=False)
     return list_of_dfs
