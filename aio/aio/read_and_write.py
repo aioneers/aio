@@ -280,9 +280,9 @@ def read_all_sheets(excel_file,
     all_sheets = pd.read_excel(excel_file_path, None, dtype=str)
     list_of_dfs = list(all_sheets.values())
     if by_row:
-        concat_output = pd.concat(lists_of_dfs, axis=0)
+        concat_output = pd.concat(list_of_dfs, axis=0)
     else:
-        concat_output = pd.concat(lists_of_dfs, axis=1)
+        concat_output = pd.concat(list_of_dfs, axis=1)
     if save_by is not None:
         _write(concat_output,
                save_by,
