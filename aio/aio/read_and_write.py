@@ -63,6 +63,7 @@ def read_and_write(file_name,
                    file_location=None,
                    write_directory=None,
                    to='both',
+                   sep=',',
                    verbose=False):
     """
     Read CSV or Excel files by removing bad lines and save them
@@ -78,6 +79,8 @@ def read_and_write(file_name,
         The desired path to save the new file (folder)
     to: {'csv', 'parquet', 'both'}, optional
         The format to save the data. Default is 'both'.
+    sep: str, default ‘,’
+        Delimiter to use. 
     verbose: bool, default False
         Informs when writing the file is successful.
 
@@ -99,7 +102,7 @@ def read_and_write(file_name,
 
     # try to read the file
     if 'csv' in str(file_name):
-        df = pd.read_csv(f_path, error_bad_lines=False, engine="python", dtype=str)
+        df = pd.read_csv(f_path, sep=sep, error_bad_lines=False, engine="python", dtype=str)
         # Save to directory
         _write(df,
                 file_name,
@@ -185,7 +188,8 @@ def read_and_concat(list_of_files,
                     write_directory=None,
                     parquet=True,
                     by_row=True,
-                    save_by=None):
+                    save_by=None,
+                    sep=','):
     """
     Read a list of parquet or csv file and concatenate them by row
     or by column. The file is written in the directory under the
@@ -206,6 +210,8 @@ def read_and_concat(list_of_files,
     save_by: str, optional. Default None
         If not None, the concatenate dataframe is written to the
         file_location under this name.
+    sep: str, default ‘,’
+        Delimiter to use. 
 
     Returns
     -------
@@ -223,7 +229,7 @@ def read_and_concat(list_of_files,
             lists_of_dfs.append(pd.read_parquet(file))
     else:
         for file in list_of_files_path:
-            lists_of_dfs.append(pd.read_csv(file, dtype=str))
+            lists_of_dfs.append(pd.read_csv(file, sep=sep, dtype=str))
     if by_row:
         concat_output = pd.concat(lists_of_dfs, axis=0)
     else:
