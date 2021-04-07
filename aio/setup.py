@@ -41,5 +41,7 @@ setuptools.setup(
         "pandas",
         "scipy",
         "openpyxl",
+        "azure-keyvault",
+        "azure-identity",
     ],
 )
