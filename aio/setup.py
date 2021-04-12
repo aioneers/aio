@@ -23,7 +23,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/aioneers/aio",
-    downloadurl="https://github.com/aioneers/aio/archive/0.0.3.tar.gz",
+    download_url="https://github.com/aioneers/aio/archive/0.0.3.tar.gz",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -33,7 +33,7 @@ setuptools.setup(
     python_requires=">=3.7",
     install_requires=[
         "pytest",
-        'pyarrow',
+        "pyarrow",
         "pydata_sphinx_theme",
         "nbsphinx",
         "numpydoc",
@@ -41,5 +41,7 @@ setuptools.setup(
         "pandas",
         "scipy",
         "openpyxl",
+        "azure-keyvault",
+        "azure-identity",
     ],
 )

@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath(".."))
 # -- Project information -----------------------------------------------------
 
 project = "aio"
-copyright = "2020, AIO"
+copyright = "2021, AIO"
 author = "AIO"
 
 # The full version, including alpha/beta/rc tags
